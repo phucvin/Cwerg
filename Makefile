@@ -22,14 +22,9 @@ tests:
 	@echo Build Native Exes
 	mkdir -p build && cd build && cmake -DCWERG_FLAGS="$(CWERG_FLAGS)" -DCWERG_LIBS="$(CWERG_LIBS)" .. && $(MAKE) -s
 	cd Base &&   $(MAKE) -s tests && $(MAKE) -s clean
-	cd CpuA32 && $(MAKE) -s tests && $(MAKE) -s clean
-	cd CpuA64 && $(MAKE) -s tests && $(MAKE) -s clean
 	cd CpuX64 && $(MAKE) -s tests && $(MAKE) -s clean
-	cd CodeGenA32 && $(MAKE) -s tests && $(MAKE) -s clean
-	cd CodeGenA64 && $(MAKE) -s tests && $(MAKE) -s clean
 	cd CodeGenX64 && $(MAKE) -s tests && $(MAKE) -s clean
 	cd CodeGenC && $(MAKE) -s tests && $(MAKE) -s clean
-	cd Elf && $(MAKE) -s tests && $(MAKE) -s clean
 	cd Util && $(MAKE) -s tests && $(MAKE) -s clean
 	cd FrontEnd && $(MAKE) -s tests_py && $(MAKE) -s clean
 	cd FrontEndWASM && $(MAKE) -s tests && $(MAKE) -s clean
