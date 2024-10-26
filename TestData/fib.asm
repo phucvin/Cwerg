@@ -33,7 +33,7 @@
 .fun main NORMAL [S32] = []
     .reg U32 [x]
 .bbl start
-    mov x = 7
+    mov x = 40
 
     pusharg x
     bsr fibonacci

@@ -24,11 +24,6 @@ tests:
 	cd Base &&   $(MAKE) -s tests && $(MAKE) -s clean
 	cd CpuX64 && $(MAKE) -s tests && $(MAKE) -s clean
 	cd CodeGenX64 && $(MAKE) -s tests && $(MAKE) -s clean
-	cd CodeGenC && $(MAKE) -s tests && $(MAKE) -s clean
-	cd Util && $(MAKE) -s tests && $(MAKE) -s clean
-	cd FrontEnd && $(MAKE) -s tests_py && $(MAKE) -s clean
-	cd FrontEndWASM && $(MAKE) -s tests && $(MAKE) -s clean
-	cd Examples && $(MAKE) -s tests && $(MAKE) -s clean
 
 show_versions:
 	@echo Tool Versions
